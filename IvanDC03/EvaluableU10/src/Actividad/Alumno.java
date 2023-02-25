@@ -11,13 +11,5 @@ public Alumno(String nombre, String curso,int asignaturas) {
     this.notas = notas;
     
 }
-public int getAsignaturas() {
-	return asignaturas;
-}
-public void setAsignaturas(int asignaturas) {
-	this.asignaturas = asignaturas;
-}
-
-
 
 }
