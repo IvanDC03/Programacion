@@ -1,5 +1,7 @@
 package EjerciciosClaseU11;
 
+import java.io.InputStream;
+
 public class Cancion {
 private String nombre;
 private int duracion;

@@ -17,9 +17,13 @@ public class Cantante {
 		this.estilo = estilo;
 	}
 
-	public Cantante(String nombreArtistico,EstiloMusical estilo) {
+	public Cantante(String nombreArtistico,EstiloMusical i) {
 		this.nombreArtistico = nombreArtistico;
-		this.estilo = estilo;
+		this.estilo = i;
+	}
+
+	public Cantante(String string, int i) {
+	
 	}
 
 	public String getNombre() {
