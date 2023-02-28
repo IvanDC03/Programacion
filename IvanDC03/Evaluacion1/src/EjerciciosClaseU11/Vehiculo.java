@@ -23,4 +23,12 @@ public class Vehiculo {
 		return marca;
 	}
 
+	@Override
+	public String toString() {
+		return "Vehiculo [matricula=" + matricula + ", tipoVehiculo=" + tipoVehiculo + ", marca=" + marca
+				+ ", getMatricula()=" + getMatricula() + ", getTipoVehiculo()=" + getTipoVehiculo() + ", getMarca()="
+				+ getMarca() + "]";
+	}
+
+
 }
