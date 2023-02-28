@@ -1,7 +1,7 @@
 package EjerciciosClaseU11;
 
 public enum TipoVehiculo {
-	COCHE(20, 4), MOTO(100, 8), CAMION(10, 2);
+	COCHE(20, 4), MOTO(10, 2), CAMION(100, 8);
 
 	private int valorPeaje;
 	private int numRuedas;
