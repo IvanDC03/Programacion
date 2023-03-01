@@ -1,5 +1,5 @@
 package EjerciciosClaseU11;
 
 public enum EstiloMusical {
-POP,ROCK,FLAMENCO,TRAP;
+	POP, ROCK, FLAMENCO, TRAP;
 }
