@@ -11,10 +11,10 @@ public class Cuenta {
 private long numero;
 private float saldo;
 private float interesAnual;
-private String cliente;
+private Cliente cliente;
 private Cliente titular;
 private ArrayList <Movimiento> movimiento;
-public Cuenta(long numero, float interesAnual, String cliente) {
+public Cuenta(long numero, float interesAnual, Cliente cliente) {
 	this.numero = numero;
 	this.interesAnual = interesAnual;
 	this.cliente = cliente;
@@ -34,12 +34,6 @@ public void reintegro(float cantidad) {
 	movimiento.add(mov);
 	this.saldo -= cantidad; 
 }
-public String getCliente() {
-	return cliente;
-}
-public void setCliente(String cliente) {
-	this.cliente = cliente;
-}
 public long getNumero() {
 	return numero;
 }
@@ -49,7 +43,14 @@ public float getSaldo() {
 public Cliente getTitular() {
 	return titular;
 }
-
+public boolean enRojos() {
+	if (saldo<0) {
+		return true;
+	}
+	else {
+		return false;
+		}
+}
 
 
 }
