@@ -3,7 +3,7 @@ package EjerciciosClaseU11;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Cuenta {
+public class Cuenta<Movimiento> {
 /*Numero
  * saldo
  * interes Anual
@@ -14,6 +14,7 @@ private float interesAnual;
 private Cliente cliente;
 private Cliente titular;
 private ArrayList <Movimiento> movimiento;
+
 public Cuenta(long numero, float interesAnual, Cliente cliente) {
 	this.numero = numero;
 	this.interesAnual = interesAnual;
@@ -51,6 +52,32 @@ public boolean enRojos() {
 		return false;
 		}
 }
+public class Movimiento {
+
+private Date fecha;
+
+private char tipo;
+
+private float importe;
+
+public Movimiento(Date fecha, char tipo, float importe) {
+
+this.fecha = fecha;
+
+this.tipo = tipo;
+
+this.importe = importe;
+
+}
 
 
+@Override
+
+public String toString() {
+
+return "Movimiento [fecha=" + fecha + ", tipo=" + tipo + ", importe=" + importe + "]";
+
+}
+
+}
 }

@@ -51,6 +51,7 @@ public boolean esMayorDeEdad() {
 	else {
 		return false;
 	}
+}
 public void ComprobarSexo(char sexo) {
 	if (sexo=='m' || sexo=='h') {
 	this.sexo = sexo;
@@ -58,11 +59,14 @@ public void ComprobarSexo(char sexo) {
 	else {
 		this.sexo = 'h';
 	}
+
 }
+
 @Override
 public String toString() {
 	return "EjercicioObjeto [nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", sexo=" + sexo + ", peso=" + peso
-			+ ", altura=" + altura + ", calcularIMC()=" + calcularIMC() + ", esMayorDeEdad()=" + esMayorDeEdad() + "]";
+		+ ", altura=" + altura + ", EjercicioObjeto()=" + EjercicioObjeto() + ", esMayorDeEdad()=" + esMayorDeEdad()
+			+ "]";
 }
 public void generarDni() {
 char [] chars = "abcdefghijklmnopqrstuvwxyz".toCharArray();
