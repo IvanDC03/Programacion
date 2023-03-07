@@ -16,15 +16,13 @@ public class Alumno {
 
 //Segundo constructor con dos parametros
 	public Alumno(String nombre, String curso) {
-		this.nombre = nombre;
-		this.curso = curso;
-		this.asignaturas = 5;
+	
+		this(nombre,curso,5);
 	}
 
 //Tercer constructor con un parametro
 	public Alumno(String nombre) {
-		this.nombre = nombre;
-		this.curso = "DAM";
+		this(nombre,"DAM");
 	}
 
 }
