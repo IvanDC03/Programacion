@@ -25,7 +25,7 @@ List<String> productos = Arrays.asList("Tomate","Aceite","Pan","Leche","Yogur","
 if (opcion==1) {
 	System.out.println(productos);
 }
-//Añadir productos al supermercado.
+//Añadir productos al supermercado
 ArrayList<String> productos1 = new ArrayList<>(productos);
 if (opcion==2) {
 	System.out.println(productos1);
