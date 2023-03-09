@@ -15,20 +15,20 @@ int opcion = sc.nextInt();
 //Menu principal 
 System.out.println("***************Menu***************");
 System.out.println("1. Mostrar productos del supermercado");
-System.out.println("2. Añadir productos al supermercado");
+System.out.println("2. Añadir productos al supermercado" );
 System.out.println("3. Mostrar carrito de la compra ordenado");
-System.out.println("4. Consultar producto de carrito");
+System.out.println("4. Consultar productos del carrito");
 System.out.println("5. Cambiar un producto por otro");
 System.out.println("6. Salir");
 //Productos del supermercado y inicializados con una lista 
-List<String> productos = Arrays.asList("Tomate","Aceite","Pan","Leche","Yogur","Queso","Jamon","Harina","Champu","Manzana");
+SupermercadoEnum.values();
 if (opcion==1) {
 	System.out.println(productos);
 }
 //Añadir productos al supermercado
 ArrayList<String> productos1 = new ArrayList<>(productos);
 if (opcion==2) {
-	System.out.println(productos1);
+	productos1.addAll(productos);
 }
 //Mostrar carrito 
 else if (opcion==3) {
@@ -80,27 +80,28 @@ System.out.println("Salir" + salir1);
 }	
 //Nueva forma de mostrar el menu
 System.out.println("Introduce una opcion: ");
-int opcion2 = sc.nextInt();
+int opcionAcesso = sc.nextInt();
 System.out.println("**********Acceso***********");
 System.out.println("1. Personal del Supermercaado");
 System.out.println("2. Cliente");
-if (opcion2==1) {
+if (opcionAcesso==1) {
 	System.out.println();
 }
-else if (opcion2==2) {
+else if (opcionAcesso==2) {
 	System.out.println("Cliente");
 }
 //Menu login 
 System.out.println("Introduzca usuario y contraseña: ");
-int opcion3 = sc.nextInt();
+String usuario = sc.nextLine();
+int contraseña = sc.nextInt();
 System.out.println("***************Menu***************");
 System.out.println("1. Mostrar productos del Supermercado");
 System.out.println("2. Añadir productos");
 System.out.println("3. Eliminar producto");
 System.out.println("4. Modificar producto");
 System.out.println("5. Salir");
-//Menu del cliente 
-System.out.println("Introduzca usuario y contraseña: ");
+//Menu del cliente
+System.out.println("Elije una opcion: ");
 int opcion4 = sc.nextInt();
 System.out.println("***************Menu***************");
 System.out.println("1. Ver productos del supermercado");
