@@ -1,3 +1,4 @@
+/**@author Iván*/
 package Supermercado;
 
 import java.util.ArrayList;
