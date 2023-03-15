@@ -1,6 +1,5 @@
 package Supermercado;
 
-//getters y setters en todas las clases
 public class Acceso {
 	private int opcionAcceso;
 
