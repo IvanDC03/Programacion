@@ -8,6 +8,45 @@ public class Menu {
 	private String cliente;
 	private String salir;
 
+	public Menu() {
+		this.menu = menu;
+		this.productos = productos;
+		this.cliente = cliente;
+		this.salir = salir;
+	}
+
+	public int getMenu() {
+		return menu;
+	}
+
+	public void setMenu(int menu) {
+		this.menu = menu;
+	}
+
+	public String getProductos() {
+		return productos;
+	}
+
+	public void setProductos(String productos) {
+		this.productos = productos;
+	}
+
+	public String getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
+
+	public String getSalir() {
+		return salir;
+	}
+
+	public void setSalir(String salir) {
+		this.salir = salir;
+	}
+
 	public static int menu(int menu, String productos, String cliente, String salir) {
 
 		switch (menu) {
