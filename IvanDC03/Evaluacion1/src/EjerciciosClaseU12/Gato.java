@@ -38,12 +38,6 @@ public void setPeso(double peso) {
 }
 public int compareTo(Gato g) {
 return(this.getNombre().compareTo(g.getNombre()))* -1;
-if (this.getPeso()>g.getPeso()) {
-	return -1;
-}
-else {
-	return 0;
-}
 }
 
 
