@@ -1,13 +1,14 @@
 package Supermercado;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class Menu {
 	private int menu;
-	private String productos;
 	private String cliente;
 	private String salir;
-
+	ArrayList<String> productos = new ArrayList<>();
+	private static String cambiar;
 	public Menu() {
 		this.menu = menu;
 		this.productos = productos;
@@ -23,11 +24,11 @@ public class Menu {
 		this.menu = menu;
 	}
 
-	public String getProductos() {
+	public ArrayList<String> getProductos() {
 		return productos;
 	}
 
-	public void setProductos(String productos) {
+	public void setProductos(ArrayList<String> productos) {
 		this.productos = productos;
 	}
 
@@ -51,22 +52,20 @@ public class Menu {
 
 		switch (menu) {
 		case 1:
-
+System.out.println("Mostrar productos del supermercado" + productos);
 			break;
 		case 2:
-
+System.out.println("Añadir productos al supermercados" + productos);
 			break;
 		case 3:
-
+Collections.sort(productos);
+System.out.println(productos.toString());
 			break;
 		case 4:
-
+System.out.println("Consultar productos del carrito" + productos);
 			break;
 		case 5:
-
-			break;
-		case 6:
-			System.out.println("Fin");
+System.out.println("Cambiar un producto por otro" + cambiar);
 			break;
 		default:
 			System.out.println("Salir" + salir);

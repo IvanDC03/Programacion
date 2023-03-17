@@ -18,9 +18,9 @@ public class Acceso {
 	public int acceso(int opcionAcesso) {
 
 		if (opcionAcesso == 1) {
-			System.out.println();
+			System.out.println("Personal del Supermercado");
 		} else if (opcionAcesso == 2) {
-			System.out.println();
+			System.out.println("Cliente");
 		}
 		return opcionAcesso;
 	}
