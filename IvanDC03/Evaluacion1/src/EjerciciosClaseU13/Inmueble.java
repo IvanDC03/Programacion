@@ -6,11 +6,15 @@ public class Inmueble {
 	private String direccion;
 	private double valorCompra;
 	
-	public Inmueble(int identificador, int area, String direccion) {
+	public Inmueble(int identificador, int area, String direccion, int numHab, int numBanos) {
 		this.identificador = identificador;
 		this.area = area;
 		this.direccion = direccion;
 		calcularValorInmueble(this);
+	}
+
+	public Inmueble(int identificador2, int area2, String direccion2, Localizacion localizacion) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getIdentificador() {
@@ -45,7 +49,7 @@ public class Inmueble {
 
 	public void calcularValorInmueble(Inmueble inm) {
 		
-		if(inm instanceof CasaRural || inm instanceof Apartaestudio)
+		if(inm instanceof CasaRural || inm instanceof ApartaEstudio)
 			this.valorCompra=this.area*1500;
 		else if(inm instanceof CasaConjuntoCerrado)
 			this.valorCompra=this.area*2500;
@@ -53,6 +57,8 @@ public class Inmueble {
 			this.valorCompra=this.area*3000;
 		else if(inm instanceof ApartamentoFamiliar)
 			this.valorCompra=this.area*2000;
-		else if(inm instanceof Oficina);
+		else if(inm instanceof Oficina)
+			this.valorCompra=this.area*3500;
+	}
 			
 }

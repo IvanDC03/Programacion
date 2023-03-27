@@ -1,6 +1,6 @@
 package EjerciciosClaseU13;
 
-public class Apartamento extends InmuebleVivienda {
+public class Apartamento extends Inmueble {
 private double valorAdministracion;
 	
 	public Apartamento(int identificador, int area, String direccion, int numHab, 
