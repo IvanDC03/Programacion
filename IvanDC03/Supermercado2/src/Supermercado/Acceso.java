@@ -3,7 +3,7 @@ package Supermercado;
 public class Acceso {
 	private int opcionAcceso;
 
-	public Acceso() {
+	public Acceso(int opcionAcceso) {
 		this.opcionAcceso = opcionAcceso;
 	}
 

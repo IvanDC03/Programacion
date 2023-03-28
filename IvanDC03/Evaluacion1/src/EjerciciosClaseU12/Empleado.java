@@ -6,17 +6,19 @@ public class Empleado {
 	private double sueldo;
 	private String antiguedad;
 
-	public Empleado(String nombre, String apellidos) {
+	public Empleado(String nombre, String apellidos, int sueldo2, int antiguedad2) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 	}
 
-	public Empleado(String nombre, String apellidos, double sueldo, String antiguedad) {
+	public Empleado(String nombre, String apellidos, double sueldo, int antiguedad2) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.sueldo = sueldo;
 		this.antiguedad = antiguedad;
 	}
+
+	
 
 	public String getNombre() {
 		return nombre;
