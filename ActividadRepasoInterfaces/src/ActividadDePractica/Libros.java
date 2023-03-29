@@ -1,6 +1,6 @@
 package ActividadDePractica;
 
-public class Libros implements Prestable {
+public abstract class Libros implements Prestable {
 private String codigo;
 private String titulo;
 private int añoDePublicacion;
