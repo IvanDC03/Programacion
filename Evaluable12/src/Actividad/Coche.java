@@ -3,13 +3,14 @@ package Actividad;
 public class Coche extends Vehiculo {
 	private int combustible;
 
-	public Coche(int ruedas, int combustible) {
-		super(ruedas, combustible);
+	public Coche(int ruedas, int velocidad, int combustible) {
+		super(ruedas, velocidad);
 		this.combustible = combustible;
 	}
 
 	public Coche() {
-		this.combustible = 0;
+		//this(0,0,0)
+		
 	}
 
 	public void repostar(int mas) {

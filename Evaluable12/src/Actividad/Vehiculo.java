@@ -10,11 +10,14 @@ public class Vehiculo {
 	}
 
 	public Vehiculo() {
+		//this(0,0)
 		this.ruedas = 0;
 		this.velocidad = 0;
 	}
 
 	public void acelerar(int mas) {
+		//si(velocidad+mas)<120
+		//velocidad = velocidad+mas;
 		if (velocidad < 120) {
 			mas++;
 		}
