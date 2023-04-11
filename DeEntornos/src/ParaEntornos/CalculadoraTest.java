@@ -1,12 +1,9 @@
 package ParaEntornos;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
 
 public class CalculadoraTest {
 
-	@Test
+	//@Test
 	public void testMain() {
 		fail("Not yet implemented");
 	}
@@ -16,17 +13,22 @@ public class CalculadoraTest {
 		//fail("Not yet implemented");
 	
 
-	@Test
+	private void fail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//@Test
 	public void testResta() {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	//@Test
 	public void testMultiplica() {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	//@Test
 	public void testDivide() {
 		fail("Not yet implemented");
 	}

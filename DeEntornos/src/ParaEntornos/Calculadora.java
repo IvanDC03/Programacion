@@ -3,9 +3,9 @@ package ParaEntornos;
 public class Calculadora {
 	private int num1;
 	private int num2;
-	public Calculadora(int a, int b) {
-		num1 = a;
-		num2 = b;
+	public Calculadora() {
+		num1 = num2;
+		num2 = num1;
 		}
 		public int suma() {
 			return num1+num2;
