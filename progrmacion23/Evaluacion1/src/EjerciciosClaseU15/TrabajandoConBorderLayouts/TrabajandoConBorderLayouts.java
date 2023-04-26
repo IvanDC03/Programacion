@@ -7,7 +7,7 @@ import javax.swing.*;
 public class TrabajandoConBorderLayouts {
 
 	public static void main(String[] args) {
-MarcoL Marco1 = new MarcoL();
+//MarcoL Marco1 = new MarcoL();
 	}
 class LaminaBorder extends JPanel{
 	private JButton btnAmarillo = new JButton("Amarillo");
