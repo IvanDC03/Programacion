@@ -1,4 +1,4 @@
-package EjerExcepciones;
+package EjerciciosClaseU14.EjerExcepciones;
 
 public class Nombre_Incorrecto {
 

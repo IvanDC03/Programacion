@@ -1,4 +1,4 @@
-package EjerExcepciones;
+package EjerciciosClaseU14.EjerExcepciones;
 
 import java.util.Scanner;
 

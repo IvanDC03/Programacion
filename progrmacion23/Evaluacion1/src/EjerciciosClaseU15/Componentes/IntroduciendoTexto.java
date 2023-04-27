@@ -13,14 +13,15 @@ import javax.swing.text.JTextComponent;
 public class IntroduciendoTexto {
 
 	public static void main(String[] args) {
-MarcoConTexto marco = new MarcoConTexto();
-LaminaConTexto lamina = new LaminaConTexto();
+		MarcoConTexto marco = new MarcoConTexto();
+		LaminaConTexto lamina = new LaminaConTexto();
 	}
 
 }
-class MarcoConTexto extends JFrame{
+
+class MarcoConTexto extends JFrame {
 	public MarcoConTexto() {
-		setBounds(300,300,500,700);
+		setBounds(300, 300, 500, 700);
 		setTitle("Trabajamdo con cajas de texto");
 		LaminaConTexto lamina = new LaminaConTexto();
 		add(lamina);
@@ -28,11 +29,13 @@ class MarcoConTexto extends JFrame{
 		setVisible(true);
 	}
 }
-class LaminaConTexto extends JPanel{
+
+class LaminaConTexto extends JPanel {
 	private JTextField text = new JTextField(30);
 	private JButton btnEscribir = new JButton("Presiona para confirmar");
 	private JLabel email = new JLabel("Email");
 	public JTextComponent lblerror;
+
 	public LaminaConTexto() {
 		add(text);
 		add(btnEscribir);
@@ -41,34 +44,36 @@ class LaminaConTexto extends JPanel{
 		OyenteEscribirTexto eventoOyente = new OyenteEscribirTexto();
 		btnEscribir.addActionListener(eventoOyente);
 	}
-private class OyenteEscribirTexto implements ActionListener{
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		System.out.println(text.getText().trim());
-		text.setText("");
+	private class OyenteEscribirTexto implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			System.out.println(text.getText().trim());
+			text.setText("");
+		}
+
 	}
 
-}
-private class OyenteEmail implements ActionListener{
+	private class OyenteEmail implements ActionListener {
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		if (email(text.getText())) {
-			lblerror.setText("Email Correcto");
-			lblerror.setOpaque(true);
-			lblerror.setBackground(Color.GREEN);
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if (email(text.getText())) {
+				lblerror.setText("Email Correcto");
+				lblerror.setOpaque(true);
+				lblerror.setBackground(Color.GREEN);
+			} else {
+				lblerror.setText("Email Incorrecto");
+				lblerror.setOpaque(true);
+				lblerror.setBackground(Color.RED);
+			}
 		}
-		else {
-			lblerror.setText("Email Incorrecto");
-			lblerror.setOpaque(true);
-			lblerror.setBackground(Color.RED);
-		}
+
 	}
-	
-}
-public boolean email(String text2) {
-	// TODO Auto-generated method stub
-	return false;
-}
+
+	public boolean email(String text2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

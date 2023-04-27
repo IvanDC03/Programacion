@@ -1,4 +1,4 @@
-package EjerExcepciones;
+package EjerciciosClaseU14.EjerExcepciones;
 
 public class DNI_Incorrecto {
 

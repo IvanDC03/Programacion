@@ -5,8 +5,8 @@ import javax.swing.*;
 public class PracticaLayouts {
 
 	public static void main(String[] args) {
-		Layout layout1 = new Layout();
-		Lamina lamina1 = new Lamina();
+		//Layout layout1 = new Layout();
+		//Lamina lamina1 = new Lamina();
 	}
 
 	class Layout extends JFrame {
