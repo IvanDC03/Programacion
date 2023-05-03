@@ -1,5 +1,6 @@
 package EjerciciosClaseU15.Componentes;
 
+import java.awt.Color;
 import java.awt.TextArea;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,23 +19,26 @@ class MarcoArea extends JFrame{
 		setTitle("Area de textos");
 		setBounds(700,300,500,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Lamina lamina = new Lamina();
+		LaminaArea lamina = new LaminaArea();
 		add(lamina);
 		setVisible(true);
 	}
 }
-class Lamina extends JPanel implements ActionListener {
+class LaminaArea extends JPanel {
 	private JTextArea textArea;
-	public Lamina() {
+	public LaminaArea() {
 		textArea = new JTextArea(8,20);
 		textArea.setLineWrap(true);
 		JScrollPane laminaScroll = new JScrollPane(textArea);
 		add(laminaScroll);
 	}
+
+}
+class OyenteAreaTexto implements ActionListener {
+
 	@Override
-	public void actionPerformed (ActionEvent e) {
-		
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
-	
 }
