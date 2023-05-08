@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.DropMode;
 
 public class MiPrimeraTablaWB extends JFrame {
 
@@ -19,7 +20,6 @@ public class MiPrimeraTablaWB extends JFrame {
 	private JTable MiTabla;
 	private JTextField txtTxtUsuario;
 	private JTextField txtTxtPassword;
-	private JTextField Tabla;
 
 	
 	public static void main(String[] args) {
@@ -44,10 +44,6 @@ public class MiPrimeraTablaWB extends JFrame {
 		MiTabla = new JTable();
 		scrollPane.setViewportView(MiTabla);
 		
-		Tabla = new JTextField();
-		Tabla.setColumns(3);
-		scrollPane.setColumnHeaderView(Tabla);
-		
 		JButton btnNewButton = new JButton("Alta");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -64,7 +60,7 @@ public class MiPrimeraTablaWB extends JFrame {
 		JButton btnNewButton_2 = new JButton("Modificacion");
 		btnNewButton_2.setBounds(220, 326, 85, 21);
 		contentPane.add(btnNewButton_2);
-		
+		//public void 
 		JButton btnNewButton_3 = new JButton("Salir");
 		btnNewButton_3.setBounds(488, 326, 85, 21);
 		contentPane.add(btnNewButton_3);
