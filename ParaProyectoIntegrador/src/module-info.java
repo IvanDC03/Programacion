@@ -6,4 +6,5 @@
  *
  */
 module ParaProyectoIntegrador {
+	requires java.desktop;
 }
