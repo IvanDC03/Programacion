@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -62,9 +63,12 @@ public class TorneosDentro extends JFrame {
 		JButton btnNewButton_3 = new JButton("New button");
 		btnNewButton_3.setBounds(389, 99, 85, 21);
 		contentPane.add(btnNewButton_3);
+		String[] columnNames = {"Nombre", "Posición", "Puntos", "Edad", "Nacionalidad"};
+		Object[][] data = new Object[20][5];
 		
-		table = new JTable();
-		table.setBounds(465, 330, -428, -155);
-		contentPane.add(table);
+				JTable table_1 = new JTable(data, columnNames);
+				table_1.setBounds(44, 155, 466, 169);
+				contentPane.add(table_1);
+		
 	}
 }
