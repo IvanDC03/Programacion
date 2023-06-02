@@ -1,8 +1,0 @@
-String[] columnNames = {"Nombre", "Posición", "Puntos", "Edad", "Nacionalidad"};
-		Object[][] data = new Object[20][5];
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(88, 147, 671, 272);
-		contentPane.add(scrollPane);
-		
-				JTable table = new JTable(data, columnNames);
-				scrollPane.setViewportView(table);
